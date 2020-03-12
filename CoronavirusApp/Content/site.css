@@ -1,0 +1,90 @@
+﻿body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#header-principal, #footer-principal {
+    background-color: #292b2d;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#header-principal h1 {
+    display: inline;
+    color: white;
+    font-size: 2em;
+}
+
+    #header-principal h1:hover {
+        color: gold;
+    }
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #292b2d;
+    padding-bottom: 5px;
+}
+
+#contenido {
+    text-align: center;
+}
+
+#contenido p {
+    text-align: justify;
+}
+
+footer {
+    text-align: right;
+}
+
+#footer-principal {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+img { 
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+article {
+    padding: 20px 50px;
+}
+
+hr {
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+    width: 350px;
+    display: block;
+}
+
+li {
+    background-color: black;
+    width: 30px;
+    margin: 1px auto;
+    font-family: Verdana;
+    font-size: 1.2em;
+    border: 1px solid #292b2d;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+@media screen and (max-width: 600px) {
+    #header-principal {
+        text-align: center;
+    }
+}
