@@ -5,7 +5,8 @@
 
 #header-principal, #footer-principal {
     background-color: #292b2d;
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #header-principal h1 {
@@ -19,8 +20,10 @@
     }
 
 section {
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #292b2d;
+    padding-bottom: 5px;
 }
 
 #contenido {
@@ -42,8 +45,9 @@ footer {
 
 img { 
     width: 50%;
-    margin: 40px 0px;
-    box-shadow: black 0px 0px 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
 }
 
 article {
@@ -52,6 +56,31 @@ article {
 
 hr {
     background-color: black;
+}
+
+ul {
+    background-color: black;
+    width: 350px;
+    display: block;
+}
+
+li {
+    background-color: black;
+    width: 30px;
+    margin: 1px auto;
+    font-family: Verdana;
+    font-size: 1.2em;
+    border: 1px solid #292b2d;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gold;
 }
 
 @media screen and (max-width: 600px) {

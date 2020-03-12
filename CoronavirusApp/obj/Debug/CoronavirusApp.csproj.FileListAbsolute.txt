@@ -69,3 +69,7 @@ C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\obj\Debug\Coronavirus
 C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\obj\Debug\CoronavirusApp.csproj.CopyComplete
 C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\obj\Debug\CoronavirusApp.dll
 C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\obj\Debug\CoronavirusApp.pdb
+C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\bin\PagedList.dll
+C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\bin\PagedList.Mvc.dll
+C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\bin\PagedList.xml
+C:\Users\Carlos\source\repos\CoronavirusApp\CoronavirusApp\bin\PagedList.Mvc.xml

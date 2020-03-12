@@ -1,6 +1,9 @@
-﻿@model IEnumerable<CoronavirusApp.Models.Noticia>
+﻿@model IPagedList<CoronavirusApp.Models.Noticia>
 
-@{ 
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
     ViewBag.Title = "Noticias sobre el Coronavirus";
 }
 
@@ -42,6 +45,10 @@
             </article>
             <hr />
         }
+
+        <center>
+            @Html.PagedListPager(Model, page => Url.Action("Index", "Noticia", new { page }))
+        </center>
 
     </section>
 
