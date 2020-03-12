@@ -1,0 +1,55 @@
+﻿body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#header-principal, #footer-principal {
+    background-color: #292b2d;
+    padding: 30px 0px;
+}
+
+#header-principal h1 {
+    display: inline;
+    color: white;
+}
+
+    #header-principal h1:hover {
+        color: gold;
+    }
+
+section {
+    margin: 10px 0px;
+    background-color: #292b2d;
+}
+
+#contenido {
+    text-align: center;
+}
+
+#contenido p {
+    text-align: justify;
+}
+
+footer {
+    text-align: right;
+}
+
+#footer-principal {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+img { 
+    width: 50%;
+    margin: 40px 0px;
+    box-shadow: black 0px 0px 1px;
+}
+
+article {
+    padding: 20px 50px;
+}
+
+hr {
+    background-color: black;
+}
+

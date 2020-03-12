@@ -8,17 +8,22 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@ViewBag.Title</title>
     <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1675/PNG/512/3890930-announce-horn-megaphone-news-trumpet_111179.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/site.css">
 </head>
 
 <body>
-    <header>
-        <h1>@ViewBag.Title</h1>
+    <header id="header-principal">
+        <div class="container">
+            <h1>@ViewBag.Title</h1>
+        </div>
     </header>
 
-    <section>
+    <section class="container">
 
         @foreach (var item in Model)
         {
@@ -27,19 +32,26 @@
                     <h2>@item.Titulo</h2>
                 </header>
 
-                @Html.Raw(item.Descripcion)
+                <div id="contenido">
+                    @Html.Raw(item.Descripcion)
+                </div>
 
                 <footer>
-                    <h4>Fecha de publicación: @item.FechaPublicacion</h4>
+                    <h6>Fecha de publicación: @item.FechaPublicacion</h6>
                 </footer>
             </article>
-            <hr/>
+            <hr />
         }
 
     </section>
 
-    <footer>
-        <small>Noticias de <a href="https://www.diariolibre.com">diariolibre.com</a></small>
+    <footer id="footer-principal">
+        <small class="center">Noticias de <a href="https://www.diariolibre.com">diariolibre.com</a></small>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
