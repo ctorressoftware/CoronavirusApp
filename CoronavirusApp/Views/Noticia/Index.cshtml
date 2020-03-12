@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CoronavirusApp.Models.Noticia>
+
+@{ 
+    ViewBag.Title = "Noticias sobre el Coronavirus";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1675/PNG/512/3890930-announce-horn-megaphone-news-trumpet_111179.png" />
+</head>
+
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+    </header>
+
+    <section>
+
+        @foreach (var item in Model)
+        {
+            <article>
+                <header>
+                    <h2>@item.Titulo</h2>
+                </header>
+
+                @Html.Raw(item.Descripcion)
+
+                <footer>
+                    <h4>Fecha de publicación: @item.FechaPublicacion</h4>
+                </footer>
+            </article>
+            <hr/>
+        }
+
+    </section>
+
+    <footer>
+        <small>Noticias de <a href="https://www.diariolibre.com">diariolibre.com</a></small>
+    </footer>
+</body>
+</html>
