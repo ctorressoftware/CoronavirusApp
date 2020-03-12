@@ -11,6 +11,7 @@
 #header-principal h1 {
     display: inline;
     color: white;
+    font-size: 2em;
 }
 
     #header-principal h1:hover {
@@ -53,3 +54,8 @@ hr {
     background-color: black;
 }
 
+@media screen and (max-width: 600px) {
+    #header-principal {
+        text-align: center;
+    }
+}
