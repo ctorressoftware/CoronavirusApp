@@ -28,9 +28,9 @@ namespace CoronavirusApp.Models
                         {
                             Titulo = item.Title.Text,
                             FechaPublicacion = item.PublishDate.DateTime,
-                            Descripcion = item.Summary.Text
-                        }
-                        );
+                            Descripcion = item.Summary.Text,
+                            Link = item.Links[0].Uri.ToString()
+                        });
                     }
                 }
             }
