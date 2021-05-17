@@ -11,7 +11,7 @@ namespace CoronavirusApp.Controllers
         {
             NoticiaParser parser = new NoticiaParser();
 
-            return View(parser.ObtenerNoticias().ToPagedList(page ?? 1, 4));
+            return View(parser.ObtenerNoticias().ToPagedList(page ?? 1, 5));
         }
     }
 }
