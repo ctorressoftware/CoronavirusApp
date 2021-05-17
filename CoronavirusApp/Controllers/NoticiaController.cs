@@ -13,5 +13,10 @@ namespace CoronavirusApp.Controllers
 
             return View(parser.ObtenerNoticias().ToPagedList(page ?? 1, 4));
         }
+
+        public string Prueba()
+        {
+            return "Prueba";
+        }
     }
 }
